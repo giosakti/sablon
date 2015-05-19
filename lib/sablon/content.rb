@@ -83,9 +83,9 @@ module Sablon
       def self.wraps?(value) false end
 
       def initialize(markdown)
-        redcarpet = ::Redcarpet::Markdown.new(Sablon::Redcarpet::Render::WordML)
-        word_ml = Sablon.content(:word_ml, redcarpet.render(markdown))
-        super word_ml
+        # redcarpet = ::Redcarpet::Markdown.new(Sablon::Redcarpet::Render::WordML)
+        # word_ml = Sablon.content(:word_ml, redcarpet.render(markdown))
+        # super word_ml
       end
 
       def append_to(*args)
